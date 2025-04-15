@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+  color: hsl(183, 100%, 15%);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(189, 47%, 97%);
+  width: 60%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.heading-bill {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#bill-input-space {
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  padding: 0 20px;
+  border-radius: 5px;
+  height: 42px;
+  line-height: 46px;
+  color: hsl(183, 100%, 15%);
+}
+
+#people-input-space {
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  padding: 0 20px;
+  border-radius: 5px;
+  height: 42px;
+  line-height: 46px;
+  color: hsl(183, 100%, 15%);
+}
+
+.dollar-icon {
+  position: relative;
+  right: 270px;
+  top: 2px;
+}
+
+.person-icon {
+  position: relative;
+  right: 270px;
+  top: 2px;
+}
+
+.bill-input input {
+  font-family: "Space Mono", monospace;
+  text-align: right;
+  font-size: 20px;
+}
+
+.selecttipInnerWrapper {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 16px; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 60px;
+}
+.select-tip-button {
+  background-color: hsl(183, 100%, 15%);
+  text-align: center;
+  padding: 6px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  color: hsl(0, 100%, 100%);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-style: none;
+  font-family: "Space Mono", monospace;
+}
+
+.select-tip-button:active {
+  color: hsl(0, 100%, 100%);
+  background-color: hsl(185, 41%, 84%);
+}
+
+.select-tip-button:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+#custom-tip {
+  text-align: center;
+  width: 100%;
+  padding: 6px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid hsl(186, 14%, 43%);
+  background-color: hsl(185, 41%, 84%);
+}
+
+.select-tip-custom input {
+  width: 100%;
+  border-radius: 8px;
+  height: 41px;
+  border: none;
+  line-height: 46px;
+  font-size: 20px;
+  text-align: center;
+  background-color: hsl(185, 41%, 84%);
+}
+.select-tip-custom ::placeholder {
+  color: hsl(183, 100%, 15%);
+}
+
+.error {
+  color: rgb(185, 122, 39);
+  margin-bottom: 16px;
+  display: none;
+}
+
+.error.active {
+  display: block;
+}
+
+.error-container {
+  justify-content: space-between;
+}
+
+.select-tip-heading {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.selecttip-percentage.hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.select-tip-card {
+  margin: 30px 0;
+}
+
+.number-of-people-heading {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.number-of-people {
+  margin: 30px 0;
+}
+
+.second-card {
+  background-color: hsl(183, 100%, 15%);
+  margin-left: 40px;
+  width: 400px;
+  border-radius: 10px;
+  height: 330px;
+}
+
+.tip-amount-wrapper {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.tip-amount-price {
+  padding-left: 110px;
+  font-size: 40px;
+  font-weight: 600;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip-amount-text {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 15px;
+  color: white;
+}
+.tip-per-person {
+  font-size: 10px;
+  color: white;
+}
+
+.total-amount-wrapper {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.total-amount-price {
+  padding-left: 125px;
+  font-size: 40px;
+  font-weight: 600;
+  color: hsl(172, 67%, 45%);
+}
+
+.total-text {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 15px;
+  color: white;
+}
+
+.total-perperson {
+  font-size: 10px;
+  color: white;
+}
+
+.reset {
+  background-color: hsl(172, 67%, 45%);
+  width: 90%;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 5px;
+  border: none;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  margin-top: 80px;
+  margin-left: 20px;
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.reset:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+@media screen and (max-width: 900px) {
+  .card-container {
+    flex-wrap: wrap;
+    width: 100%;
+    transform: none;
+    position: absolute;
+    transform: translate(-50%);
+    top: 25%;
+    padding: 45px;
+  }
+  .selecttipInnerWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .second-card {
+    margin-left: 0;
+    width: 100%;
+  }
+  .tip-amount-wrapper {
+    padding: 10px 0;
+  }
+  .total-amount-wrapper {
+    padding-left: 0;
+  }
+  .reset {
+    margin-left: 14px;
+  }
+  .total-amount-price {
+    font-size: 30px;
+    padding-left: 95px;
+    padding-top: 3px;
+  }
+  .tip-amount-price {
+    font-size: 30px;
+    padding-left: 70px;
+    padding-top: 3px;
+  }
+  .tip-amount {
+    padding-left: 10px;
+  }
+  .total-amount-text {
+    padding-left: 10px;
+  }
+  .heading {
+    margin-top: 50px;
+  }
+}
