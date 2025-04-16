@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <script src="script.js" defer></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+    <h1 class="heading">SPLI<br>TTER</h1>
+    <main>
+        <div class="card-container">
+
+
+            <div class="first-card">
+
+                <div class="heading-card-one">
+                    <h1 class="heading-bill">Bill</h1>
+                    <div class="bill-input">
+                        <input id="bill-input-space" text="" placeholder="0">
+                        <img src="images/icon-dollar.svg" class="dollar-icon" alt="dollar icon" />
+                        </input>
+                    </div>
+                </div>
+
+                <!-- select tip div  -->
+                <div class="select-tip-card">
+                    <h1 class="select-tip-heading"> Select Tip %</h1>
+                    <div class="selecttipInnerWrapper">
+                        <button class="select-tip-button">5%</button>
+                        <button class="select-tip-button">10%</button>
+                        <button class="select-tip-button">15%</button>
+                        <button class="select-tip-button">25%</button>
+                        <button class="select-tip-button">50%</button>
+                        <input type="text" id="custom-tip" placeholder="Custom" </div>
+                    </div>
+
+
+                    <div class="number-of-people">
+                        <div class="error-container flex">
+                            <label for="peopleInput">Number of People</label>
+                            <p class="error">Can't be zero</p>
+                        </div>
+                        <!-- <h1 class="number-of-people-heading">Number of people</h1> -->
+                        <div class="bill-input">
+                            <input id="people-input-space" text="" placeholder="0">
+                            <img src="images/icon-person.svg" class="person-icon" alt="person icon" />
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECOND CARD -->
+
+            <div class="second-card">
+                <div class="tip-amount-wrapper">
+                    <div class="tip-amount">
+                        <p class="tip-amount-text">Tip amount <br>
+                        <p class="tip-per-person">/ Person</p>
+                        </p>
+                    </div>
+                    <div class="tip-amount-price">
+                        <p class="total-amount">$0.00</p>
+                    </div>
+                </div>
+
+                <div class="total-amount">
+                    <div class="total-amount-wrapper">
+                        <div class="total-amount-text">
+                            <p class="total-text">Total <br>
+                            <p class="total-perperson">/ Person</p>
+                            </p>
+                        </div>
+
+                        <div class="total-amount-price">
+                            <p class="total-amount-person">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn reset">RESET</button>
+            </div>
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
