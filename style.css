@@ -185,7 +185,7 @@ body {
 }
 
 .tip-amount-price {
-  padding-left: 110px;
+  padding-left: 70px;
   font-size: 40px;
   font-weight: 600;
   color: hsl(172, 67%, 45%);
@@ -209,7 +209,7 @@ body {
 }
 
 .total-amount-price {
-  padding-left: 125px;
+  padding-left: 110px;
   font-size: 40px;
   font-weight: 600;
   color: hsl(172, 67%, 45%);
@@ -249,7 +249,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .card-container {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     width: 100%;
     transform: none;
     position: absolute;
@@ -257,6 +257,12 @@ body {
     top: 25%;
     padding: 45px;
   }
+
+  .first-card {
+    margin-top: 10px;
+    width: 800px;
+  }
+
   .selecttipInnerWrapper {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -280,12 +286,12 @@ body {
   }
   .total-amount-price {
     font-size: 30px;
-    padding-left: 95px;
+    padding-left: 80px;
     padding-top: 3px;
   }
   .tip-amount-price {
     font-size: 30px;
-    padding-left: 70px;
+    padding-left: 30px;
     padding-top: 3px;
   }
   .total-amount {
