@@ -20,8 +20,7 @@ tipInputBtns.forEach((inputButton) => {
   inputButton.addEventListener("click", (e) => {
     e.preventDefault();
 
-    let tipPercentage =
-      parseFloat(inputButton.innerText.replace("%", "")) / 100;
+    let tipPercentage = parseFloat(inputButton.innerText.replace("%", ""));
     let amount = parseFloat(billInput.value);
     let people = Number(peopleInput.value);
 
@@ -32,7 +31,7 @@ tipInputBtns.forEach((inputButton) => {
     }
     // const tottalTip (amount * tipPercentage) / 100
     const tipAmount = (amount * tipPercentage) / 100;
-    const totalBill = amount / people + tipAmount;
+    const totalBill = amount + tipAmount;
     // const totalAmountValue = amount / people + tipAmount;
 
     updateResults(tipAmount, totalBill);
@@ -43,7 +42,7 @@ tipInputBtns.forEach((inputButton) => {
 customTipPercent.addEventListener("input", () => {
   let amount = parseFloat(billInput.value);
   let people = Number(peopleInput.value);
-  let customTipPercentage = parseFloat(customTipPercent.value) / 100;
+  let customTipPercentage = parseFloat(customTipPercent.value);
 
   if (
     !isNaN(amount) &&
@@ -52,7 +51,7 @@ customTipPercent.addEventListener("input", () => {
     !isNaN(customTipPercentage)
   ) {
     const tipAmount = (amount * customTipPercentage) / 100;
-    const totalBill = amount / people + tipAmount;
+    const totalBill = amount + tipAmount;
     // const customTip = (amount * customTipPercentage) / people;
     // const totalAmountValue = amount / people + customTip;
     updateResults(tipAmount, totalBill);
