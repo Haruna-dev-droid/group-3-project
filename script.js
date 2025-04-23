@@ -31,7 +31,7 @@ tipInputBtns.forEach((inputButton) => {
     }
     // const tottalTip (amount * tipPercentage) / 100
     const tipAmount = (amount * tipPercentage) / 100;
-    const totalBill = amount + tipAmount;
+    const totalBill = amount / people + tipAmount;
     // const totalAmountValue = amount / people + tipAmount;
 
     updateResults(tipAmount, totalBill);
