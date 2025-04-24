@@ -1,4 +1,3 @@
-/* Import Poppins and Space Mono Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* Reset default browser styles */
@@ -10,8 +9,8 @@
 
 /* Base body styles */
 body {
-  background-color: hsl(185, 41%, 84%); /* Light grayish cyan background */
-  font-family: "Space Mono", monospace; /* Set default font */
+  background-color: hsl(185, 41%, 84%); 
+  font-family: "Space Mono", monospace;
 }
 
 /* Main heading styles */
@@ -133,8 +132,8 @@ body {
   padding: 6px 20px;
   font-size: 20px;
   border-radius: 8px;
-  border: 1px solid hsl(186, 14%, 43%); /* Dark grayish cyan border */
-  background-color: hsl(185, 41%, 84%); /* Light grayish cyan background */
+  border: 1px solid hsl(186, 14%, 43%); 
+  background-color: hsl(185, 41%, 84%); 
 }
 
 /* Custom tip input field styles */
@@ -156,9 +155,9 @@ body {
 
 /* Error message styling */
 .error {
-  color: rgb(185, 122, 39); /* Orange text for errors */
+  color: rgb(185, 122, 39); 
   margin-bottom: 16px;
-  display: none; /* Hidden by default */
+  display: none;
 }
 
 /* Show error when active class is applied */
@@ -217,7 +216,7 @@ body {
 
 /* Tip amount value styling */
 .tip-amount-price {
-  padding-left: 110px;
+  padding-left: 70px;
   font-size: 40px;
   font-weight: 600;
   color: hsl(172, 67%, 45%);
@@ -246,10 +245,10 @@ body {
 
 /* Total amount value styling */
 .total-amount-price {
-  padding-left: 125px;
+  padding-left: 110px;
   font-size: 40px;
   font-weight: 600;
-  color: hsl(172, 67%, 45%); /* Strong cyan text */
+  color: hsl(172, 67%, 45%);
 }
 
 /* Total amount label styling */
@@ -268,7 +267,7 @@ body {
 
 /* Reset button styling */
 .reset {
-  background-color: hsl(172, 67%, 45%); /* Strong cyan background */
+  background-color: hsl(172, 67%, 45%);
   width: 90%;
   height: 48px;
   line-height: 48px;
@@ -292,16 +291,20 @@ body {
 @media screen and (max-width: 900px) {
   /* Adjust card container for mobile */
   .card-container {
-    flex-wrap: wrap; /* Stack elements vertically */
+    flex-wrap: wrap-reverse;
     width: 100%;
     transform: none;
     position: absolute;
-    transform: translate(-50%); /* Only center horizontally */
+    transform: translate(-50%);
     top: 25%;
     padding: 45px;
   }
   
-  /* Change tip buttons to 2 columns */
+  .first-card {
+    margin-top: 10px;
+    width: 800px;
+  }
+
   .selecttipInnerWrapper {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -311,11 +314,14 @@ body {
   .second-card {
     margin-left: 0;
     width: 100%;
+    height: 280px;
   }
   
   /* Adjust tip amount section spacing */
   .tip-amount-wrapper {
     padding: 10px 0;
+    margin-left: 10px;
+    margin-top: 7px;
   }
   
   /* Adjust total amount section spacing */
@@ -326,22 +332,26 @@ body {
   /* Adjust reset button position */
   .reset {
     margin-left: 14px;
+    margin-top: 45px;
   }
   
   /* Smaller font sizes for mobile */
   .total-amount-price {
     font-size: 30px;
-    padding-left: 95px;
+    padding-left: 80px;
     padding-top: 3px;
   }
   
   .tip-amount-price {
     font-size: 30px;
-    padding-left: 70px;
+    padding-left: 30px;
     padding-top: 3px;
   }
-  
-  /* Adjust spacing for mobile */
+
+  .total-amount {
+    margin-left: 10px;
+  }
+
   .tip-amount {
     padding-left: 10px;
   }
@@ -353,5 +363,32 @@ body {
   /* Adjust main heading position */
   .heading {
     margin-top: 50px;
+  }
+  #people-input-space {
+    width: 100%;
+  }
+  .person-icon {
+    position: relative;
+    right: 0;
+    left: 10px;
+    top: -30px;
+  }
+  #bill-input-space {
+    width: 100%;
+  }
+  .dollar-icon {
+    position: relative;
+    right: 0;
+    left: 10px;
+    top: -30px;
+  }
+  .heading {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  br {
+    display: none;
   }
 }
