@@ -68,5 +68,5 @@ document.querySelector(".reset").addEventListener("click", () => {
   billInput.value = "";
   peopleInput.value = "";
   customTipPercent.value = "";
-  errorContainer.textContent = "";
+  // errorContainer.textContent = "";
 });
