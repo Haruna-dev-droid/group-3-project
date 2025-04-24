@@ -7,7 +7,7 @@ const tipInputBtns = document.querySelectorAll(".select-tip-button");
 const customTipPercent = document.getElementById("custom-tip");
 const totalAmount = document.querySelector(".total-amount");
 const totalAmountPerPerson = document.querySelector(".total-amount-person");
-const errorContainer = document.querySelector(".error-container");
+const errorContainer = document.querySelector(".error");
 
 // funtion to update results
 function updateResults(tipAmount, totalAmountValue) {
@@ -68,5 +68,5 @@ document.querySelector(".reset").addEventListener("click", () => {
   billInput.value = "";
   peopleInput.value = "";
   customTipPercent.value = "";
-  // errorContainer.textContent = "";
+  errorContainer.innerHTML = "";
 });
