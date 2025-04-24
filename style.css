@@ -19,19 +19,19 @@ body {
   font-size: 30px;
   line-height: 30px;
   margin-top: 30px;
-  color: hsl(183, 100%, 15%); /* Dark cyan text */
+  color: hsl(183, 100%, 15%);
 }
 
 /* Main container that holds the calculator */
 .card-container {
-  display: flex; /* Use flexbox for layout */
+  display: flex;
   justify-content: center;
   padding: 20px;
   position: absolute; /* Center the container on the page */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: hsl(189, 47%, 97%); /* Very light grayish cyan */
+  background-color: hsl(189, 47%, 97%);
   width: 60%;
   padding: 30px;
   border-radius: 20px;
@@ -45,24 +45,24 @@ body {
 
 /* Bill input field styling */
 #bill-input-space {
-  background-color: hsl(185, 41%, 84%); /* Light grayish cyan background */
+  background-color: hsl(185, 41%, 84%); 
   border: none;
   padding: 0 20px;
   border-radius: 5px;
   height: 42px;
   line-height: 46px;
-  color: hsl(183, 100%, 15%); /* Dark cyan text */
+  color: hsl(183, 100%, 15%); 
 }
 
 /* People input field styling */
 #people-input-space {
-  background-color: hsl(185, 41%, 84%); /* Light grayish cyan background */
+  background-color: hsl(185, 41%, 84%);
   border: none;
   padding: 0 20px;
   border-radius: 5px;
   height: 42px;
   line-height: 46px;
-  color: hsl(183, 100%, 15%); /* Dark cyan text */
+  color: hsl(183, 100%, 15%);
 }
 
 /* Position dollar icon inside the bill input field */
@@ -89,40 +89,36 @@ body {
 /* Grid layout for tip percentage buttons */
 .selecttipInnerWrapper {
   display: grid;
-  /* Old commented out grid settings */
-  /* grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
-  row-gap: 16px; */
-  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem; /* Gap between grid items */
   width: 60px; 
 }
 
 /* Tip percentage button styling */
 .select-tip-button {
-  background-color: hsl(183, 100%, 15%); /* Dark cyan background */
+  background-color: hsl(183, 100%, 15%); 
   text-align: center;
   padding: 6px 20px;
   font-size: 20px;
   border-radius: 8px;
-  color: hsl(0, 100%, 100%); /* White text */
+  color: hsl(0, 100%, 100%);
   cursor: pointer;
-  -webkit-transition: all 0.5s ease; /* For Safari */
-  transition: all 0.5s ease; /* Smooth hover effect */
+  -webkit-transition: all 0.5s ease; 
+  transition: all 0.5s ease;
   border-style: none;
   font-family: "Space Mono", monospace;
 }
 
 /* Tip button active state */
 .select-tip-button:active {
-  color: hsl(0, 100%, 100%); /* White text */
-  background-color: hsl(185, 41%, 84%); /* Light grayish cyan background */
+  color: hsl(0, 100%, 100%);
+  background-color: hsl(185, 41%, 84%);
 }
 
 /* Tip button hover state */
 .select-tip-button:hover {
-  color: hsl(183, 100%, 15%); /* Dark cyan text */
-  background-color: hsl(172, 67%, 45%); /* Strong cyan background */
+  color: hsl(183, 100%, 15%); 
+  background-color: hsl(172, 67%, 45%);
 }
 
 /* Custom tip input styling */
