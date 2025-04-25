@@ -48,9 +48,9 @@ function calculateTip(bill, people, tipPercentage) {
   const tipAmount = (bill * tipPercentage) / 100;
   
   // Calculate total per person (bill share + tip share)
-  const tipPerPerson = tipAmount / people;
+  // const tipPerPerson = tipAmount / people;
   const billPerPerson = bill / people;
-  const totalPerPerson = billPerPerson + tipPerPerson;
+  const totalPerPerson = billPerPerson + tipAmount;
   
   return { tipPerPerson, totalPerPerson };
 }
